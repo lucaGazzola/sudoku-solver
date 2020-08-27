@@ -1,5 +1,4 @@
 import numpy as np
-from numpy import genfromtxt
 
 def square(sudoku,k,j):
     if k < 3 and j < 3:
@@ -37,6 +36,6 @@ def fill(sudoku):
     print(sudoku)
 
 if __name__ == '__main__':
-    sudoku = genfromtxt('sudoku_hard.csv', delimiter=',')
+    sudoku = np.genfromtxt('sudoku_hard.csv', delimiter=',')
     print(sudoku)
     fill(sudoku)
